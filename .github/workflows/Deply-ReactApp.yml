@@ -41,7 +41,9 @@ jobs:
             #auth-token: # optional
             # NPM_REGISTRY_URL
             #registry-url: # optional
+      - name: Yarn Start
         run: yarn start  
+        
       - name: Creating Build
         run: yarn build
       
