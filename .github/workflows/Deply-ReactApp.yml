@@ -42,7 +42,8 @@ jobs:
             # NPM_REGISTRY_URL
             #registry-url: # optional
       
-      - uses: borales/actions-yarn@v2.3.0
+      - name: Yarn Build
+        uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
       
@@ -50,6 +51,6 @@ jobs:
         run: npm install -g surge
         
       - name: Deploying Surge Application
-        run: sruge ./build bootcamp2020-ShahbazClass2.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build bootcamp2020-ShahbazClass2.surge.sh --token ${{ secrets.SURGE_TOKEN }}
         
       
