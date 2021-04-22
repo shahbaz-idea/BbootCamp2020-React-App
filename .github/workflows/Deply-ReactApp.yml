@@ -40,10 +40,8 @@ jobs:
             # NPM_AUTH_TOKEN
             #auth-token: # optional
             # NPM_REGISTRY_URL
-            #registry-url: # optional
-      
-        with: 
-          # Creating Build
+            #registry-url: # optional          
+            # Creating Build
           cmd: build
       
       - name: Install Surge
