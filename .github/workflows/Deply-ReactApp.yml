@@ -36,7 +36,7 @@ jobs:
         uses: Borales/actions-yarn@v2.1.0
         with:
           # Yarn command
-          cmd: yarn install
+          #cmd: yarn install
           # Yarn Start
           cmd: yarn start
           
